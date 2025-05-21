@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Drip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+    <header >
+        <nav id="home">
+            <div class="logo">
+                <img src="images/logo.png" alt="coffee">
+            </div>
+            <ul id="navmenu" >
+                <i class='bx bx-x closeIcon' id="closeIcon"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Customers</a></li>
+            </ul>
+            <div class="icons">
+                <i class='bx bx-cart'></i> 
+                <i class='bx bx-search'></i>
+                <i class='bx bx-menu menuIcon' id="openIcon"></i>
+            </div>
+        </nav>
+
+        <!-- Main Section -->
+        <main>
+            <!-- Left Section -->
+            <div class="left">
+                <h1>From midnight to sunrise: one drip at a time.</h1>
+                <p>Whether you're greeting the sunrise or burning the midnight oil, our premium brews turn every moment into a coffee ritual.Every bean is meticulously roasted to bring out its smooth, satisfying character from the first sip to the last drop.</p>
+                <button class="btn">Shop Now</button>
+            </div>
+            <!-- Right section -->
+            <div class="right">
+                <img src="images/coffee.png" alt="coffee">
+            </div>
+        </main>
+    </header>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const openIcon = document.getElementById("openIcon");
+            const closeIcon = document.getElementById("closeIcon");
+            const navmenu = document.getElementById("navmenu");
+
+            openIcon.addEventListener("click", () => {
+                navmenu.style.right = "0";
+            });
+            
+            closeIcon.addEventListener("click", () => {
+                navmenu.style.right = "-200%";
+            });
+        });
+    </script>
+</body>
+</html>
