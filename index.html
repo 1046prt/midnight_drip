@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
-    <header >
+     <header>
         <nav id="home">
             <div class="logo">
-                <img src="images/logo.png" alt="coffee">
+                <img src="images/LOGO.png" alt="coffee">
+                <h2 style="color: #bc9667; font-weight: bold;">Midnight Drip</h2>
             </div>
-            <ul id="navmenu" >
+            <ul id="navmenu">
                 <i class='bx bx-x closeIcon' id="closeIcon"></i>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Customers</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="icons">
-                <i class='bx bx-cart'></i> 
-                <i class='bx bx-search'></i>
+                <i class='bx bx-cart' id="cartIcon"></i> 
+                <i class='bx bx-search' id="searchIcon"></i>
                 <i class='bx bx-menu menuIcon' id="openIcon"></i>
             </div>
         </nav>
@@ -32,30 +33,73 @@
             <!-- Left Section -->
             <div class="left">
                 <h1>From midnight to sunrise: one drip at a time.</h1>
-                <p>Whether you're greeting the sunrise or burning the midnight oil, our premium brews turn every moment into a coffee ritual.Every bean is meticulously roasted to bring out its smooth, satisfying character from the first sip to the last drop.</p>
-                <button class="btn">Shop Now</button>
+                <p>Whether you're greeting the sunrise or burning the midnight oil, our premium brews turn every moment into a coffee ritual. Every bean is meticulously roasted to bring out its smooth, satisfying character from the first sip to the last drop.</p>
+                <button class="btn" id="shopNowBtn">Shop Now</button>
             </div>
             <!-- Right section -->
             <div class="right">
-                <img src="images/coffee.png" alt="coffee">
+                <div style="width: 100%; max-width: 400px; height: 400px; background-color: #bc9667; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <img src="images/COFFEE.png" alt="midnightdrip">
+                </div>
             </div>
         </main>
     </header>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const openIcon = document.getElementById("openIcon");
-            const closeIcon = document.getElementById("closeIcon");
-            const navmenu = document.getElementById("navmenu");
 
-            openIcon.addEventListener("click", () => {
-                navmenu.style.right = "0";
-            });
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Midnight Drip is a premium coffee company dedicated to providing the finest coffee beans and brewing experiences to our customers.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
             
-            closeIcon.addEventListener("click", () => {
-                navmenu.style.right = "-200%";
-            });
-        });
-    </script>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class='bx bx-map'></i> 123 Coffee Street, Brew City</p>
+                <p><i class='bx bx-phone'></i> +1 (555) 123-4567</p>
+                <p><i class='bx bx-envelope'></i> info@midnightdrip.com</p>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates, promotions, and coffee tips!</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Midnight Drip | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
