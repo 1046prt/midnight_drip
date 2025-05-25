@@ -30,11 +30,10 @@ nav {
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
-    
 }
 
 nav .logo {
-    width: 90px; 
+    width: 90px;
     transition: transform 0.3s ease;
 }
 
@@ -58,7 +57,7 @@ nav ul li {
     border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 nav ul li a {
@@ -353,85 +352,54 @@ footer {
     }
 }
 
-        @media (max-width: 768px) {
-            nav ul {
-                position: fixed;
-                flex-direction: column;
-                top: 0;
-                right: -200%;
-                bottom: 0;
-                background: #bc9667;
-                color: black;
-                padding: 20px;
-                width: 250px;
-                gap: 10px;
-                align-items: start;
-                transition: right 0.3s ease;
-                z-index: 100;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-            }
-            
-            nav ul li {
-                display: block;
-                padding: 10px 0;
-                width: 100%;
-            }
-            
-            nav ul li a {
-                color: black;
-                font-size: 18px;
-            }
-            
-            nav ul li:hover {
-                background: transparent;
-            }
-            
-            nav ul li:hover a {
-                color: white;
-            }
-            
-            .menuIcon {
-                display: block !important;
-            }
-            
-            .closeIcon {
-                display: block !important;
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                font-size: 24px;
-                cursor: pointer;
-            }
+@media (max-width: 768px) {
 
-            .right img {
-                max-width: 300px;
-            }
+    .menu-open #menuIcon {
+        display: none;
+    }
 
-            .footer-section {
-                min-width: 100%;
-                margin-bottom: 30px;
-            }
-        }
+    .menu-open #closeIcon {
+        display: block;
+    }
 
+    #navMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #111111;
+        transition: right 0.4s ease;
+        z-index: 999;
+    }
 
-  @media (max-width: 480px) {
-            .left h1 {
-                font-size: 32px;
-            }
+    .menu-open #navMenu {
+        right: 0;
+    }
 
-            .right img {
-                max-width: 250px;
-            }
+    body.menu-open {
+        overflow: hidden;
+    }
+}
 
-            .icons {
-                gap: 10px;
-            }
+@media (max-width: 480px) {
+    .left h1 {
+        font-size: 32px;
+    }
 
-            .icons i {
-                margin: 0 5px;
-                font-size: 20px;
-            }
-        }
+    .right img {
+        max-width: 250px;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .icons i {
+        margin: 0 5px;
+        font-size: 20px;
+    }
+}
 
 .back-to-top {
     position: fixed;
