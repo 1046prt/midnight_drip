@@ -201,6 +201,139 @@ button:active {
     display: none !important;
 }
 
+/* Coffee Products Section Styles */
+.products-section {
+    padding: 60px 5%;
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #bc9667;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.products-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ddd;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(188, 150, 103, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(188, 150, 103, 0.4);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.06);
+}
+
+.product-card h3 {
+    font-size: 22px;
+    color: #bc9667;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-card p {
+    font-size: 15px;
+    color: #ccc;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.product-card .btn {
+    width: 100%;
+    background: #bc9667;
+    color: #edeae3;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 0;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background: #a17b50;
+    box-shadow: 0 5px 15px rgba(161, 123, 80, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products-section h2 {
+        font-size: 32px;
+    }
+
+    .product-card h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section h2 {
+        font-size: 26px;
+    }
+
+    .products-section p {
+        font-size: 16px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+    }
+
+    .product-card p {
+        font-size: 14px;
+    }
+
+    .product-card .btn {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+}
+
+
 footer {
     background-color: #1a1a1a;
     color: white;
