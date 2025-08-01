@@ -30,15 +30,12 @@
             </div>
         </nav>
 
-        <!-- Main Section -->
         <main>
-            <!-- Left Section -->
             <div class="left">
                 <h1>From midnight to sunrise: one drip at a time.</h1>
                 <p>Whether you're greeting the sunrise or burning the midnight oil, our premium brews turn every moment into a coffee ritual. Every bean is meticulously roasted to bring out its smooth, satisfying character from the first sip to the last drop.</p>
                 <button class="btn" id="shopNowBtn">Shop Now</button>
             </div>
-            <!-- Right section -->
             <div class="right">
                 <div style="width: 100%; max-width: 400px; height: 400px; background-color: #bc9667; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
                     <img src="images/COFFEE.png" alt="midnightdrip">
@@ -52,124 +49,130 @@
         <h2>Our Signature Coffee Selection</h2>
         <p>Experience the diverse flavors of our specially curated coffee collection.</p>
         
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="espresso">Espresso-Based</button>
+            <button class="filter-btn" data-filter="cold">Cold Coffee</button>
+            <button class="filter-btn" data-filter="specialty">Specialty</button>
+        </div>
+        
         <div class="products-grid">
             
-            <div class="product-card">
-            <img src="images/Espresso.png" alt="Espresso">
-            <h3>Espresso</h3>
-            <p>Strong, rich, and concentrated — the heart of Italian coffee culture.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Espresso.png" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Strong, rich, and concentrated — the heart of Italian coffee culture.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Americano.jpeg" alt="Americano">
-            <h3>Americano</h3>
-            <p>A smooth blend of espresso and hot water for a mellow, rich taste.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Americano.jpeg" alt="Americano">
+                <h3>Americano</h3>
+                <p>A smooth blend of espresso and hot water for a mellow, rich taste.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Cappuccino.jpeg" alt="Cappuccino">
-            <h3>Cappuccino</h3>
-            <p>Perfect balance of espresso, steamed milk, and frothy foam.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Cappuccino.jpeg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Perfect balance of espresso, steamed milk, and frothy foam.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Latte.jpeg" alt="Latte">
-            <h3>Latte</h3>
-            <p>Velvety espresso with a generous layer of creamy steamed milk.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Latte.jpeg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Velvety espresso with a generous layer of creamy steamed milk.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Macchiato.jpeg" alt="Macchiato">
-            <h3>Macchiato</h3>
-            <p>Espresso "stained" with milk foam bold with a hint of smoothness.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Macchiato.jpeg" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <p>Espresso "stained" with milk foam bold with a hint of smoothness.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Flat.jpeg" alt="Flat White">
-            <h3>Flat White</h3>
-            <p>Espresso with silky microfoam smooth and strong in every sip.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Flat.jpeg" alt="Flat White">
+                <h3>Flat White</h3>
+                <p>Espresso with silky microfoam smooth and strong in every sip.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Cold.jpeg" alt="Cold Brew">
-            <h3>Cold Brew</h3>
-            <p>Brewed slowly in cold water for a smooth, less acidic experience.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="cold">
+                <img src="images/Cold.jpeg" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Brewed slowly in cold water for a smooth, less acidic experience.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Mocha.jpeg" alt="Mocha">
-            <h3>Mocha</h3>
-            <p>Espresso meets chocolate and milk for a sweet, indulgent treat.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Mocha.jpeg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>Espresso meets chocolate and milk for a sweet, indulgent treat.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Affogato.jpeg" alt="Affogato">
-            <h3>Affogato</h3>
-            <p>Vanilla ice cream drowned in hot espresso — dessert meets coffee.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="specialty">
+                <img src="images/Affogato.jpeg" alt="Affogato">
+                <h3>Affogato</h3>
+                <p>Vanilla ice cream drowned in hot espresso — dessert meets coffee.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Cortado.jpeg" alt="Cortado">
-            <h3>Cortado</h3>
-            <p>Equal parts espresso and warm milk — bold yet balanced.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Cortado.jpeg" alt="Cortado">
+                <h3>Cortado</h3>
+                <p>Equal parts espresso and warm milk — bold yet balanced.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Irish.jpeg" alt="Irish Coffee">
-            <h3>Irish Coffee</h3>
-            <p>A bold mix of coffee, whiskey, and cream for a warming twist.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="specialty">
+                <img src="images/Irish.jpeg" alt="Irish Coffee">
+                <h3>Irish Coffee</h3>
+                <p>A bold mix of coffee, whiskey, and cream for a warming twist.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Ristretto.jpeg" alt="Ristretto">
-            <h3>Ristretto</h3>
-            <p>A short shot of espresso with a richer and more intense flavor.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Ristretto.jpeg" alt="Ristretto">
+                <h3>Ristretto</h3>
+                <p>A short shot of espresso with a richer and more intense flavor.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Nitro.jpeg" alt="Nitro Coffee">
-            <h3>Nitro Coffee</h3>
-            <p>Cold brew infused with nitrogen for a creamy, fizzy texture.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="cold">
+                <img src="images/Nitro.jpeg" alt="Nitro Coffee">
+                <h3>Nitro Coffee</h3>
+                <p>Cold brew infused with nitrogen for a creamy, fizzy texture.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Breve.jpeg" alt="Breve">
-            <h3>Breve</h3>
-            <p>Espresso with steamed half-and-half — rich, velvety, and creamy.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Breve.jpeg" alt="Breve">
+                <h3>Breve</h3>
+                <p>Espresso with steamed half-and-half — rich, velvety, and creamy.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Doppio.jpeg" alt="Doppio">
-            <h3>Doppio</h3>
-            <p>A double shot of espresso for double the strength and flavor.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="espresso">
+                <img src="images/Doppio.jpeg" alt="Doppio">
+                <h3>Doppio</h3>
+                <p>A double shot of espresso for double the strength and flavor.</p>
+                <button class="btn">Shop Now</button>
             </div>
 
-            <div class="product-card">
-            <img src="images/Turkish.jpeg" alt="Turkish Coffee">
-            <h3>Turkish Coffee</h3>
-            <p>Finely ground coffee simmered unfiltered — rich, thick, and aromatic.</p>
-            <button class="btn">Shop Now</button>
+            <div class="product-card" data-category="specialty">
+                <img src="images/Turkish.jpeg" alt="Turkish Coffee">
+                <h3>Turkish Coffee</h3>
+                <p>Finely ground coffee simmered unfiltered — rich, thick, and aromatic.</p>
+                <button class="btn">Shop Now</button>
             </div>
             
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section about">
@@ -216,11 +219,9 @@
         </div>
 
     </footer>
-    <!-- Back to top button -->
     <div class="back-to-top" id="backToTop">
         <i class='bx bx-up-arrow-alt'></i>
     </div>
-    <!-- Toast notification -->
     <div class="toast" id="toast"></div>
     <script src="script.js"></script>
 </body>

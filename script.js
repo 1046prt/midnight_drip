@@ -59,6 +59,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Product filter functionality
+    const filterContainer = document.querySelector(".filter-buttons");
+    const productCards = document.querySelectorAll(".products-grid .product-card");
+
+    if (filterContainer) {
+        filterContainer.addEventListener("click", (e) => {
+            if (e.target.classList.contains("filter-btn")) {
+                filterContainer.querySelector(".active").classList.remove("active");
+                e.target.classList.add("active");
+
+                const filterValue = e.target.getAttribute("data-filter");
+
+                productCards.forEach(card => {
+                    if (filterValue === "all" || card.dataset.category === filterValue) {
+                        card.classList.remove("hide");
+                    } else {
+                        card.classList.add("hide");
+                    }
+                });
+            }
+        });
+    }
+
     // Shop Now button interaction
     const shopNowBtn = document.getElementById("shopNowBtn");
     shopNowBtn.addEventListener("click", () => {
