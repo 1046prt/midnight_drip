@@ -25,7 +25,7 @@ Coffee/
 1. **Clone the repository:**
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/1046prt/midnight_drip.git
    ```
 
 2. **Navigate to the project directory:**
@@ -50,7 +50,7 @@ Contributions are welcome! To contribute:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/1046prt/midnight_drip/blob/main/LICENSE).
 
 ---
 
