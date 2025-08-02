@@ -562,8 +562,12 @@ footer {
         font-size: 32px;
     }
 
+    .right{
+        padding: 2px;
+    }
+
     .right img {
-        max-width: 250px;
+        max-width: 600px;
     }
 
     .icons {
