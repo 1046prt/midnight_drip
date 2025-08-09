@@ -54,4 +54,4 @@ This project is licensed under the [MIT License](https://github.com/1046prt/midn
 
 ---
 
-*Enjoy your coffee and happy coding!*
+_Enjoy your coffee and happy coding!_
