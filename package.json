@@ -1,0 +1,26 @@
+{
+  "name": "midnight-drip",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Midnight Drip — a premium coffee store built with Vue 3, Vite, Tailwind CSS v4 and Motion.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.48.0",
+    "@vueuse/motion": "^3.0.3",
+    "lenis": "^1.3.11",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.7"
+  }
+}

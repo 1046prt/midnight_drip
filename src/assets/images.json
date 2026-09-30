@@ -1,0 +1,20 @@
+{
+  "espresso": { "id": 9501559, "url": "https://images.pexels.com/photos/9501559/pexels-photo-9501559.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "americano": { "id": 12537507, "url": "https://images.pexels.com/photos/12537507/pexels-photo-12537507.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "cappuccino": { "id": 6747870, "url": "https://images.pexels.com/photos/6747870/pexels-photo-6747870.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "latte": { "id": 459489, "url": "https://images.pexels.com/photos/459489/pexels-photo-459489.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "macchiato": { "id": 14045086, "url": "https://images.pexels.com/photos/14045086/pexels-photo-14045086.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "flat-white": { "id": 4913342, "url": "https://images.pexels.com/photos/4913342/pexels-photo-4913342.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "cold-brew": { "id": 13735958, "url": "https://images.pexels.com/photos/13735958/pexels-photo-13735958.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "mocha": { "id": 236288, "url": "https://images.pexels.com/photos/236288/pexels-photo-236288.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "affogato": { "id": 35229818, "url": "https://images.pexels.com/photos/35229818/pexels-photo-35229818.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "cortado": { "id": 38523136, "url": "https://images.pexels.com/photos/38523136/pexels-photo-38523136.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "irish-coffee": { "id": 10725922, "url": "https://images.pexels.com/photos/10725922/pexels-photo-10725922.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "ristretto": { "id": 38523136, "url": "https://images.pexels.com/photos/38523136/pexels-photo-38523136.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "nitro": { "id": 13735958, "url": "https://images.pexels.com/photos/13735958/pexels-photo-13735958.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "breve": { "id": 4869292, "url": "https://images.pexels.com/photos/4869292/pexels-photo-4869292.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "doppio": { "id": 2067432, "url": "https://images.pexels.com/photos/2067432/pexels-photo-2067432.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "turkish": { "id": 31330206, "url": "https://images.pexels.com/photos/31330206/pexels-photo-31330206.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" },
+  "hero": { "id": 5373256, "url": "https://images.pexels.com/photos/5373256/pexels-photo-5373256.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop" },
+  "about": { "id": 16682442, "url": "https://images.pexels.com/photos/16682442/pexels-photo-16682442.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop" }
+}

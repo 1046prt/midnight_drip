@@ -1,57 +1,125 @@
-# Midnight Drip Coffee Website
+# Midnight Drip — Premium Coffee Store
 
-Welcome to the Midnight Drip Coffee website project! This is a modern, responsive landing page for a fictional premium coffee brand, showcasing products and company information.
+A modern, animated, and highly interactive coffee store built with **Vue 3**, **Vite**, **Tailwind CSS v4**, and **Motion**.
 
 ## Features
 
-- Responsive design for desktop and mobile
-- Product showcase with images and descriptions
-- Newsletter subscription form
-- Social media links
-- Smooth navigation and interactive UI
-
-## Project Structure
-
-```bash
-Coffee/
-  ├── images/           # Coffee product images and logo
-  ├── index.html        # Main landing page
-  ├── style.css         # Main stylesheet
-  ├── script.js         # JavaScript for interactivity
-```
+- **Vue 3 + Vite** — Fast dev server and optimized production builds
+- **Tailwind CSS v4** — Utility-first styling with custom design tokens
+- **Motion (motion-v)** — Smooth animations and transitions
+- **Lenis** — Buttery smooth scrolling
+- **Pinia** — State management for cart and UI
+- **Vue Router** — Client-side routing with page transitions
+- **Lucide Icons** — Beautiful, consistent iconography
 
 ## Getting Started
 
-1. **Clone the repository:**
+### Prerequisites
 
-   ```bash
-   git clone https://github.com/1046prt/midnight_drip.git
-   ```
+- Node.js 18+
+- npm or yarn
 
-2. **Navigate to the project directory:**
+### Installation
 
-   ```bash
-   cd Coffee
-   ```
+```bash
+npm install
+```
 
-3. **Open `index.html` in your browser.**
+### Development
 
-No build tools or server required—just open the HTML file!
+```bash
+npm run dev
+```
 
-## Contributing
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Contributions are welcome! To contribute:
+### Production Build
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+### Tests
+
+```bash
+# Static check: every @/ import resolves to a real file
+node .kilo/check-imports.js
+
+# Logic tests: real Pinia stores + product data (36 assertions)
+npx esbuild .kilo/store-tests.js --bundle --platform=node --format=cjs --alias:@=./src --loader:.json=json --outfile=.kilo/store-tests.bundle.cjs --log-level=error && node .kilo/store-tests.bundle.cjs
+```
+
+## Project Structure
+
+```
+src/
+├── assets/          # Static assets (images, etc.)
+├── components/      # Reusable Vue components
+│   ├── Header.vue
+│   ├── Footer.vue
+│   ├── HeroSection.vue
+│   ├── AboutSection.vue
+│   ├── ProductsSection.vue
+│   ├── ProductCard.vue
+│   ├── BrewGuides.vue
+│   ├── Gallery.vue
+│   ├── TestimonialsSection.vue
+│   ├── Faq.vue
+│   ├── VisitUs.vue
+│   ├── CartSidebar.vue
+│   ├── SearchOverlay.vue
+│   ├── ToastContainer.vue
+│   └── PageTransition.vue
+├── composables/     # Vue composables
+│   └── useScroll.js
+├── data/            # Static data
+│   └── products.js
+├── stores/          # Pinia stores
+│   └── index.js
+├── styles/          # Global styles
+│   └── main.css
+├── views/           # Page components
+│   ├── Home.vue
+│   ├── ProductDetail.vue
+│   ├── Cart.vue
+│   └── NotFound.vue
+├── App.vue          # Root component
+└── main.js          # App entry point
+```
+
+## Key Features
+
+### Animations & Interactions
+- Smooth scroll with Lenis
+- Page transitions with Vue Router
+- Scroll-triggered animations with IntersectionObserver
+- Hover effects on cards and buttons
+- Floating elements in hero section
+- Animated cart sidebar
+- Toast notifications
+
+### UI Components
+- Responsive header with mobile menu
+- Product grid with filtering and sorting
+- Product detail pages with tabs
+- Shopping cart with quantity controls
+- Search overlay with keyboard navigation
+- Newsletter subscription form
+- Testimonials section
+
+### Accessibility
+- ARIA labels and roles
+- Keyboard navigation support
+- Focus management
+- Reduced motion support
+- Semantic HTML
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/1046prt/midnight_drip/blob/main/LICENSE).
-
----
-
-_Enjoy your coffee and happy coding!_
+MIT
